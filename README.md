@@ -5,7 +5,7 @@
 - https://tenpo-assesment.herokuapp.com/swagger-ui/
 
 ### Login
-Para hacer login se envía el siguiente payload como **POST** a **/login**. Tiene auto  sign-up.
+Para hacer login se envía el siguiente payload como **POST** a **/login**. Tiene auto  sign-up. El token lo devuelve en los headers como *Authorization*
 
 ```json
 {
