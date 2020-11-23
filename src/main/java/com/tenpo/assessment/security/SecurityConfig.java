@@ -1,6 +1,5 @@
 package com.tenpo.assessment.security;
 
-import com.tenpo.assessment.AssessmentApplication;
 import com.tenpo.assessment.domain.services.ApplicationUserService;
 import com.tenpo.assessment.security.handlers.JWTAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
