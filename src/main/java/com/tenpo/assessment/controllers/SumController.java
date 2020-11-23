@@ -5,6 +5,7 @@ import com.tenpo.assessment.domain.dtos.response.SumResponse;
 import com.tenpo.assessment.domain.entities.SumHistory;
 import com.tenpo.assessment.domain.exceptions.NotFoundException;
 import com.tenpo.assessment.domain.services.SumHistoryService;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -27,7 +28,7 @@ public class SumController {
     }
 
     @GetMapping("/sum")
-    public ResponseEntity<SumResponse> getSum(@RequestParam Integer a, @RequestParam Integer b) {
+    public ResponseEntity<SumResponse> getSum(@ApiParam(example = "1") @RequestParam Integer a, @ApiParam(example = "2") @RequestParam Integer b) {
         sumHistoryService.saveSumHistory(a, b);
         return ResponseEntity.ok(new SumResponse(a + b));
     }
