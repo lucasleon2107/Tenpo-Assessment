@@ -1,8 +1,8 @@
 # Tenpo Assessment
 ### API URL:
-- https://tenpo-assesment.herokuapp.com
+- https://tenpo-assessment.herokuapp.com
 ### Project Documentation: 
-- https://tenpo-assesment.herokuapp.com/swagger-ui/
+- https://tenpo-assessment.herokuapp.com/swagger-ui/
 
 ### Login
 Para hacer login se envía el siguiente payload como **POST** a **/login**. Tiene auto  sign-up. El token lo devuelve en los headers como **Authorization**
